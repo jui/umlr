@@ -21,7 +21,7 @@ many_to_many :route => :stop
 
 one_to_many :drive => :route
 
-one_to_one :drive => :stop
+one_to_one "Label", :drive => :stop
 
 
 Umlr.generate_png("my.png")
